@@ -1,5 +1,12 @@
+import { ExplorerProvider } from "./contexts/ExplorerContext";
+import { Home } from "./Home";
+
 function App() {
-  return <h1>Hello World</h1>;
+  return (
+    <ExplorerProvider>
+      <Home />
+    </ExplorerProvider>
+  );
 }
 
 export default App;
