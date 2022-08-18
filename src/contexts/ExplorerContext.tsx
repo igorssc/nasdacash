@@ -16,7 +16,8 @@ type currencyDataProps = Array<{
   blocks: number;
   btc: number;
   diff: number;
-  msOff: number;
+  mnsOn: number;
+  mnsOff: number;
   netHash: number;
   peers: number;
   status: string;
@@ -54,6 +55,14 @@ export const ExplorerProvider = ({ children }: ExplorerProviderProps) => {
     useState<transactionsDataProps>();
 
   useEffect(() => {
+    api
+      .get<currencyDataProps>("coin/history?limit=10")
+      .then(({ data }) => setCurrencyData(data));
+
+    api
+      .get<transactionsDataProps>("tx/latest?limit=10")
+      .then(({ data }) => setTransactionsData(data));
+
     const interval = setInterval(() => {
       api
         .get<currencyDataProps>("coin/history?limit=10")

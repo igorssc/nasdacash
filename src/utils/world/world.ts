@@ -41,6 +41,8 @@ class World {
       camera,
       controls,
       globe.instance,
+      // Brazil
+      // { lat: -22.9068, lng: -43.1729 },
       { lat: 22.3193, lng: 114.1694 },
       1000
     ); // China HongKong

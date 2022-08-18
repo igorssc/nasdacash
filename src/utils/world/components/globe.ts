@@ -54,7 +54,7 @@ class Globe {
         .atmosphereColor("#ffffff")
         .atmosphereAltitude(0.1)
         .hexPolygonColor((e) => {
-          return "rgba(255,255,255, 0.7)";
+          return "rgba(255,255,255,0.7)";
         });
     }, delay);
   }
@@ -151,7 +151,7 @@ class Globe {
       shininess: number;
     };
     globeMaterial.color = new Color(0x1d072e);
-    globeMaterial.emissive = new Color(0x220038);
+    globeMaterial.emissive = new Color(0x000000);
     globeMaterial.emissiveIntensity = 0.1;
     globeMaterial.shininess = 0.9;
   }

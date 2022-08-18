@@ -1,7 +1,7 @@
 import { AmbientLight, DirectionalLight, PointLight } from "three";
 
 function createLights() {
-  const ambientLight = new AmbientLight(0x1d072e, 0.3);
+  const ambientLight = new AmbientLight(0x000000, 0.6);
 
   const dLight = new DirectionalLight(0xffffff, 0.6);
   dLight.position.set(-400, 100, 400);
