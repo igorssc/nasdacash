@@ -1,5 +1,6 @@
 import { ReactNode, useEffect } from "react";
-import "../utils/particles.js";
+import "../utils/particles/particles.js";
+import { configParticles } from "../utils/particles/particlesjs.config.js";
 
 interface BackgroundParticlesProps {
   children: ReactNode;
@@ -14,13 +15,9 @@ export const BackgroundParticles = ({
 }: BackgroundParticlesProps) => {
   useEffect(() => {
     // @ts-ignore:next-line
-    particlesJS.load(
-      "particles-js",
-      "../../particlesjs.config.json",
-      function () {
-        // console.log("callback - particles-js config loaded");
-      }
-    );
+    particlesJS.load("particles-js", configParticles, function () {
+      // console.log("callback - particles-js config loaded");
+    });
   }, []);
 
   return (
