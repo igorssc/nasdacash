@@ -18,7 +18,7 @@ export const Header = () => {
             alt="Logo from Nasdacash"
             className="w-52 max-w-full h-auto relative z-10"
           />
-          <h1 className="text-6xl leading-relaxed text-center relative z-10 tracking-wider">
+          <h1 className="text-6xl text-center relative z-10 tracking-wider">
             <Typist startDelay={1000} className="typist">
               <span className="font-black">
                 The{" "}
@@ -29,7 +29,7 @@ export const Header = () => {
                   rency
                 </span>
               </span>
-              <br />
+              <div className="my-8" />
               <span className="font-regular">of the future!</span>
             </Typist>
           </h1>

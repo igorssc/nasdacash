@@ -18,9 +18,7 @@ module.exports = {
       },
       backgroundImage: {
         header: "linear-gradient(to bottom, #000, #1D072E)",
-        gradient: "linear-gradient(to top, #ff6f15, #fdb303)",
-        world: "url('./src/hero-glow.svg')",
-        // " linear-gradient(22deg, rgba(29,7,46,1) 0%, rgba(113,62,153,0.6530987394957983) 14%, rgba(29,7,46,1) 35%, rgba(29,7,46,1) 70%, rgba(113,62,153,1) 100%)",
+        footer: "linear-gradient(to top, #000, #1D072E)",
       },
       colors: {
         primary: "#1D072E",

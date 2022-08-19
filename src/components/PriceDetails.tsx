@@ -15,12 +15,12 @@ export const PriceDetails = () => {
       />
       <div className="container mx-auto flex flex-row justify-around text-center">
         <div className="flex flex-col gap-5">
-          <h1 className="text-2xl font-medium">Price</h1>
-          <p className="text-lg">
+          <h1 className="text-base font-normal">Price</h1>
+          <p className="text-4xl text-secondary font-light">
             {currencyData ? (
               <CountUp
                 end={currencyData[0].usd}
-                duration={3}
+                duration={1}
                 separator=","
                 decimals={4}
                 decimal="."
@@ -30,11 +30,11 @@ export const PriceDetails = () => {
             ) : (
               0
             )}
-            <small className="block text-gray-400">
+            <small className="block text-secondary/60 text-base">
               {currencyData ? (
                 <CountUp
                   end={currencyData[0].btc}
-                  duration={3}
+                  duration={1}
                   separator=","
                   decimals={8}
                   decimal="."
@@ -49,12 +49,12 @@ export const PriceDetails = () => {
         </div>
         <div className="border-r-2 border-gray-400"></div>
         <div className="flex flex-col gap-5">
-          <h1 className="text-2xl font-medium">Blocks</h1>
-          <p className="text-lg">
+          <h1 className="text-base font-normal">Blocks</h1>
+          <p className="text-4xl text-secondary font-light">
             {currencyData ? (
               <CountUp
                 end={currencyData[0].blocks}
-                duration={2}
+                duration={1}
                 separator=","
                 decimals={0}
                 enableScrollSpy={true}
@@ -66,12 +66,12 @@ export const PriceDetails = () => {
         </div>
         <div className="border-r-2 border-gray-400"></div>
         <div className="flex flex-col gap-5">
-          <h1 className="text-2xl font-medium">Total addresses</h1>
-          <p className="text-lg">
+          <h1 className="text-base font-normal">Total addresses</h1>
+          <p className="text-4xl text-secondary font-light">
             {currencyData ? (
               <CountUp
                 end={currencyData[0].countCarverAddresses}
-                duration={2}
+                duration={1}
                 separator=","
                 decimals={0}
                 enableScrollSpy={true}
@@ -83,12 +83,12 @@ export const PriceDetails = () => {
         </div>
         <div className="border-r-2 border-gray-400"></div>
         <div className="flex flex-col gap-5">
-          <h1 className="text-2xl font-medium">Masternodes</h1>
-          <p className="text-lg">
+          <h1 className="text-base font-normal">Masternodes</h1>
+          <p className="text-4xl text-secondary font-light">
             {currencyData ? (
               <CountUp
                 end={currencyData[0].mnsOn}
-                duration={3}
+                duration={1}
                 separator=","
                 decimals={0}
                 enableScrollSpy={true}

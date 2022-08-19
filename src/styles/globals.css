@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-primary text-gray-200;
+  @apply bg-primary text-gray-200 leading-relaxed;
 }
 
 .typist .Cursor--blinking {
