@@ -4,34 +4,30 @@ import { configParticles } from "../utils/particles/particlesjs.config.js";
 
 interface BackgroundParticlesProps {
   children: ReactNode;
-  heightBackground: number;
   className?: string;
 }
 
 export const BackgroundParticles = ({
   children,
-  heightBackground,
   className,
 }: BackgroundParticlesProps) => {
   useEffect(() => {
-    // @ts-ignore:next-line
-    particlesJS.load("particles-js", configParticles, function () {
-      // console.log("callback - particles-js config loaded");
-    });
+    setTimeout(() => {
+      // @ts-ignore:next-line
+      particlesJS.load("particles-js", configParticles, function () {});
+    }, 1000);
   }, []);
 
   return (
     <>
       <div
         id="particles-js"
-        className={`w-full h-${
-          heightBackground ? "[" + String(heightBackground) + "px]" : "full"
-        } ${className ? className : ""}`}
+        className={`w-full h-full"
+        ${className ? className : ""}`}
       >
         <canvas
-          className="particles-js-canvas-el w-full h-full absolute"
-          width="1013"
-          height={String(heightBackground)}
+          className={`particles-js-canvas-el w-full absolute`}
+          height={0}
         ></canvas>
         {children}
       </div>

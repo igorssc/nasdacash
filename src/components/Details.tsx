@@ -1,28 +1,11 @@
-import { CaretDown } from "phosphor-react";
-import { useEffect, useState } from "react";
 import logoImg from "../assets/logo.png";
 import { BackgroundParticles } from "../components/BackgroundParticles";
 
 export const Details = () => {
-  const [heightBackground, setHeightBackground] = useState(0);
-
-  const handleWindowSizeChange = () => {
-    setHeightBackground(
-      document.getElementsByTagName("header")[0].getBoundingClientRect().height
-    );
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", handleWindowSizeChange);
-    return () => {
-      window.removeEventListener("resize", handleWindowSizeChange);
-    };
-  }, []);
-
   return (
     <div>
-      <BackgroundParticles heightBackground={heightBackground}>
-        <header className="min-h-screen max-w-[1100px] m-auto flex flex-col justify-around items-center ">
+      <BackgroundParticles>
+        <div className="max-w-[1100px] m-auto flex flex-col justify-around items-center ">
           <img
             src={logoImg}
             alt="Logo from Nasdacash"
@@ -42,10 +25,7 @@ export const Details = () => {
               className="w-[40rem] max-w-full h-auto"
             />
           </div> */}
-          <div className="h-56 flex justify-center items-center">
-            <CaretDown size={90} color="#fff" />
-          </div>
-        </header>
+        </div>
       </BackgroundParticles>
     </div>
   );

@@ -12,6 +12,10 @@ var pJS = function (tag_id, params) {
     "#" + tag_id + " > .particles-js-canvas-el"
   );
 
+  var heightBackground = () =>
+    document.getElementById(tag_id)?.offsetHeight || 0;
+
+  console.log(heightBackground() || canvas_el.offsetHeight);
   /* particles.js variables with default values */
   this.pJS = {
     canvas: {
@@ -164,7 +168,8 @@ var pJS = function (tag_id, params) {
     }
 
     pJS.canvas.w = pJS.canvas.el.offsetWidth * pJS.canvas.pxratio;
-    pJS.canvas.h = pJS.canvas.el.offsetHeight * pJS.canvas.pxratio;
+    pJS.canvas.h =
+      (heightBackground() || pJS.canvas.el.offsetHeight) * pJS.canvas.pxratio;
 
     pJS.particles.size.value = pJS.tmp.obj.size_value * pJS.canvas.pxratio;
     pJS.particles.size.anim.speed =
@@ -197,7 +202,7 @@ var pJS = function (tag_id, params) {
     if (pJS && pJS.interactivity.events.resize) {
       window.addEventListener("resize", function () {
         pJS.canvas.w = pJS.canvas.el.offsetWidth;
-        pJS.canvas.h = pJS.canvas.el.offsetHeight;
+        pJS.canvas.h = heightBackground() || pJS.canvas.el.offsetHeight;
 
         /* resize canvas */
         if (pJS.tmp.retina) {
@@ -1502,8 +1507,6 @@ function isInArray(value, array) {
 window.pJSDom = [];
 
 window.particlesJS = function (tag_id, params) {
-  //console.log(params);
-
   /* no string id? so it's object params, and set the id with default id */
   if (typeof tag_id != "string") {
     params = tag_id;
