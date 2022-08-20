@@ -34,10 +34,11 @@ export const Header = () => {
             </Typist>
           </h1>
           <p className="text-xl font-light leading-8">
-            Polkadot unites and secures a growing ecosystem of specialized
-            blockchains called parachains. Apps and services on Polkadot can
-            securely communicate across chains, forming the basis for a truly
-            interoperable decentralized web.
+            Nasdacash is known as a digital currency with a focus on Ease of
+            use, anonymity and transaction speed. These features are implemented
+            on a network of dedicated servers known as masternodes, which gives
+            rise to many exciting features that are not available on
+            conventional blockchains.
           </p>
         </div>
         <div className="flex items-center justify-center z-20">

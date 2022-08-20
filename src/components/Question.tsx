@@ -29,7 +29,11 @@ export const Question = ({ question, answer }: QuestionsProps) => {
               leaveTo="transform scale-95 opacity-0"
             >
               <Disclosure.Panel className="px-4 pb-8 text-sm text-justify font-light leading-6">
-                {answer}
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: answer,
+                  }}
+                ></p>
               </Disclosure.Panel>
             </Transition>
           </>

@@ -8,34 +8,41 @@ export const CommonQuestions = () => {
       </h1>
       <div className="container mx-auto w-full p-2 relative z-10">
         <Question
-          question="What is your refund policy?"
-          answer="If you're unhappy with your purchase for any reason, email us
-                      within 90 days and we'll refund you in full, no questions
-                      asked. Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a type
-                      specimen book. It has survived not only five centuries, but
-                      also the leap into electronic typesetting, remaining
-                      essentially unchanged. It was popularised in the 1960s with
-                      the release of Letraset sheets containing Lorem Ipsum
-                      passages, and more recently with desktop publishing software
-                      like Aldus PageMaker including versions of Lorem Ipsum."
+          question="What is Nasdacash?"
+          answer="
+          Launched in 2020, Nasdacash is an open-source peer-to-peer cryptocurrency that follows the Decentralized Autonomous Organization Model. It aims to ensure privacy, transaction speed and anonymity.
+          One of the main purposes is to provide an affordable and convenient means to make daily payments for various products and services. NSDC aims to be a practical alternative to bank cards and cash.<br/>
+          It also provides a robust solution for international remittances, particularly in countries where financial freedom is limited. Virtual currency gives users freedom and control so they can send or receive money anywhere, to anyone.
+          With it, there is no need to deal with bureaucracy, exchange rate complexities, delays and charges that increase the financial burden.."
         />
         <Question
-          question="What is your refund policy?"
-          answer="If you're unhappy with your purchase for any reason, email us
-                      within 90 days and we'll refund you in full, no questions
-                      asked. Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a type
-                      specimen book. It has survived not only five centuries, but
-                      also the leap into electronic typesetting, remaining
-                      essentially unchanged. It was popularised in the 1960s with
-                      the release of Letraset sheets containing Lorem Ipsum
-                      passages, and more recently with desktop publishing software
-                      like Aldus PageMaker including versions of Lorem Ipsum."
+          question="What is mining?"
+          answer="
+          Through a process called 'mining',  people use specialized computers to solve extremely difficult mathematical problems.
+          If their solution is correct, they will receive the right to add a new block to the blockchain.
+          When the network verifies that the problem has been resolved correctly, a new block is added to the blockchain and the miner is rewarded with Nasdacash currency."
+        />
+        <Question
+          question="What is masternode?"
+          answer="
+          Masternodes are powerful servers backed by collateral held on the Nasdacash network, and are designed to provide advanced services and governance on the blockchain.
+          Masternodes host full copies of the blockchain and provide a unique second layer of services for the network.
+          Masternodes must be backed by Nasdacash-denominated collateral, and in return, their operators receive regular payments for the services they provide to the network."
+        />
+        <Question
+          question="What are the advantages of masternodes?"
+          answer="
+          Unlike many cryptocurrencies that only use the POW engine, in digital currencies that use masternode it is possible to earn only by keeping this service active.
+          By keeping a masternode active on the network it is possible to receive rewards that vary according to each currency. Basically part of the block value is reserved to reward masternodes.
+          It can be concluded that it is a form of “holding” and being remunerated for it."
+        />
+        <Question
+          question="What is mining PoS?"
+          answer="
+          PoS mining works like a kind of lottery. It dispenses with the use of electricity and also the need to own large machines. In PoS, the process does not work through these machines, but through the nodes in the network.
+          Thus, the nodes function as validators of the blocks, since there is no miner figure.<br/>
+          Mining via PoS requires the user to be able to prove that they own a certain amount of cryptocurrencies. To do this, he needs to send this amount of cryptocurrency to a certain address.
+          With this, the cryptocurrencies will be locked at that address, serving as proof of the user's participation. At the end, the user receives back the blocked cryptocurrencies, along with the reward."
         />
       </div>
     </div>
