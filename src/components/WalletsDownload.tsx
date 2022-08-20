@@ -3,7 +3,7 @@ import { AppleLogo, LinuxLogo, WindowsLogo } from "phosphor-react";
 export const WalletDownload = () => {
   return (
     <div className="bg-footer">
-      <div className="container mx-auto flex flex-col gap-8 py-14">
+      <div className="container mx-auto flex flex-col gap-16 py-14">
         <h1 className="text-center text-4xl font-black">Wallets</h1>
         <div className="flex flex-row justify-evenly">
           <div className="flex flex-col justify-center items-center gap-4">

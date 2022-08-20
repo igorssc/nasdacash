@@ -15,7 +15,6 @@ var pJS = function (tag_id, params) {
   var heightBackground = () =>
     document.getElementById(tag_id)?.offsetHeight || 0;
 
-  console.log(heightBackground() || canvas_el.offsetHeight);
   /* particles.js variables with default values */
   this.pJS = {
     canvas: {

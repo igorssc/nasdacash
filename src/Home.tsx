@@ -1,7 +1,7 @@
 import { BackgroundParticles } from "./components/BackgroundParticles";
 import { CommonQuestions } from "./components/CommonQuestions";
-import { Details } from "./components/Details";
 import { Header } from "./components/Header";
+import { MiningDetails } from "./components/MiningDetails";
 import { PriceDetails } from "./components/PriceDetails";
 import { WalletDownload } from "./components/WalletsDownload";
 
@@ -11,7 +11,8 @@ export const Home = () => {
       <Header />
       <PriceDetails />
       <BackgroundParticles>
-        <Details />
+        {/* <Details /> */}
+        <MiningDetails />
         <CommonQuestions />
       </BackgroundParticles>
       <WalletDownload />

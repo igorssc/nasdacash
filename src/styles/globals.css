@@ -9,3 +9,19 @@ body {
 .typist .Cursor--blinking {
   @apply animate-typist;
 }
+
+.blocks-table {
+  @apply text-center w-full;
+}
+
+.blocks-table th {
+  @apply py-4 font-semibold uppercase;
+}
+
+.blocks-table td {
+  @apply py-4 font-light;
+}
+
+.blocks-table tr + tr {
+  @apply border-t-2 border-purple-200/50;
+}
