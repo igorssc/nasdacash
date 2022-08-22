@@ -55,7 +55,7 @@ export const Header = () => {
               className="w-52 max-w-full h-auto relative z-10"
             />
             <h1 className="text-6xl text-center relative z-10 tracking-wider">
-              {/* <Title /> */}
+              <Title />
             </h1>
             <p className="text-xl font-light leading-8">
               Nasdacash is known as a digital currency with a focus on Ease of

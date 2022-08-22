@@ -4,7 +4,7 @@ export const About = () => {
   return (
     <>
       <div className="container m-auto flex flex-col justify-around px-4 pt-16 pb-10">
-        <div className="grid grid-cols-2 items-center justify-center">
+        <div className="grid md:grid-cols-2 items-center justify-center gap-20 md:gap-0">
           <div>
             <h1 className="text-center text-4xl font-black mb-16 relative z-10">
               Nasdacash

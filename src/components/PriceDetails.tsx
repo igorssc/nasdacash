@@ -3,6 +3,56 @@ import CountUp from "react-countup";
 import roundedBorder from "../assets/rounded-border.svg";
 import { ExplorerContext } from "../contexts/ExplorerContext";
 
+interface GroupProps {
+  title: string;
+  value: {
+    end?: number;
+    decimals?: number;
+    prefix?: string;
+  };
+  subValue?: {
+    end?: number;
+    decimals?: number;
+    prefix?: string;
+  };
+}
+
+const Group = ({ title, value, subValue }: GroupProps) => {
+  return (
+    <div className="flex flex-col gap-5 group-price-details w-full">
+      <h1 className="text-base font-normal">{title}</h1>
+      <p className="text-4xl text-secondary font-light">
+        {value.end ? (
+          <CountUp
+            end={value.end}
+            duration={1}
+            separator=","
+            decimals={value.decimals || 0}
+            decimal="."
+            prefix={value.prefix || ""}
+            enableScrollSpy={true}
+          />
+        ) : (
+          0
+        )}
+        <small className="block text-secondary/60 text-base">
+          {subValue?.end && (
+            <CountUp
+              end={subValue.end}
+              duration={1}
+              separator=","
+              decimals={subValue.decimals || 0}
+              decimal="."
+              prefix={subValue.prefix || ""}
+              enableScrollSpy={true}
+            />
+          )}
+        </small>
+      </p>
+    </div>
+  );
+};
+
 export const PriceDetails = () => {
   const { currencyData } = useContext(ExplorerContext);
 
@@ -14,105 +64,43 @@ export const PriceDetails = () => {
           alt=""
           className="absolute -top-[49px] h-[50px] w-full z-30"
         />
-        <div className="container mx-auto flex flex-row justify-around text-center">
-          <div className="flex flex-col gap-5">
-            <h1 className="text-base font-normal">Price</h1>
-            <p className="text-4xl text-secondary font-light">
-              {currencyData ? (
-                <CountUp
-                  end={currencyData[0].usd}
-                  duration={1}
-                  separator=","
-                  decimals={4}
-                  decimal="."
-                  prefix="$ "
-                  enableScrollSpy={true}
-                />
-              ) : (
-                0
-              )}
-              <small className="block text-secondary/60 text-base">
-                {currencyData ? (
-                  <CountUp
-                    end={currencyData[0].btc}
-                    duration={1}
-                    separator=","
-                    decimals={8}
-                    decimal="."
-                    prefix="BTC "
-                    enableScrollSpy={true}
-                  />
-                ) : (
-                  0
-                )}
-              </small>
-            </p>
-          </div>
-          <div className="border-r-2 border-gray-400"></div>
-          <div className="flex flex-col gap-5">
-            <h1 className="text-base font-normal">Blocks</h1>
-            <p className="text-4xl text-secondary font-light">
-              {currencyData ? (
-                <CountUp
-                  end={currencyData[0].blocks}
-                  duration={1}
-                  separator=","
-                  decimals={0}
-                  enableScrollSpy={true}
-                />
-              ) : (
-                0
-              )}
-            </p>
-          </div>
-          <div className="border-r-2 border-gray-400"></div>
-          <div className="flex flex-col gap-5">
-            <h1 className="text-base font-normal">Total addresses</h1>
-            <p className="text-4xl text-secondary font-light">
-              {currencyData ? (
-                <CountUp
-                  end={currencyData[0].countCarverAddresses}
-                  duration={1}
-                  separator=","
-                  decimals={0}
-                  enableScrollSpy={true}
-                />
-              ) : (
-                0
-              )}
-            </p>
-          </div>
-          <div className="border-r-2 border-gray-400"></div>
-          <div className="flex flex-col gap-5">
-            <h1 className="text-base font-normal">Masternodes</h1>
-            <p className="text-4xl text-secondary font-light">
-              {currencyData ? (
-                <CountUp
-                  end={currencyData[0].mnsOn + currencyData[0].mnsOff}
-                  duration={1}
-                  separator=","
-                  decimals={0}
-                  enableScrollSpy={true}
-                />
-              ) : (
-                0
-              )}
-              <small className="block text-secondary/60 text-base">
-                {currencyData ? (
-                  <CountUp
-                    end={currencyData[0].mnsOn}
-                    duration={1}
-                    separator=","
-                    decimals={0}
-                    prefix="Online: "
-                    enableScrollSpy={true}
-                  />
-                ) : (
-                  0
-                )}
-              </small>
-            </p>
-          </div>
+        <div className="container mx-auto flex flex-col md:flex-row gap-6 md:gap-0 justify-around items-center text-center">
+          <Group
+            title="Price"
+            value={{
+              end: currencyData && currencyData[0].usd,
+              decimals: 4,
+              prefix: "$ ",
+            }}
+            subValue={{
+              end: currencyData && currencyData[0].btc,
+              decimals: 8,
+              prefix: "BTC ",
+            }}
+          />
+          <Group
+            title="Blocks"
+            value={{
+              end: currencyData && currencyData[0].blocks,
+            }}
+          />
+          <Group
+            title="Total addresses"
+            value={{
+              end: currencyData && currencyData[0].countCarverAddresses,
+            }}
+          />
+          <Group
+            title="Masternodes"
+            value={{
+              end:
+                currencyData && currencyData[0].mnsOn + currencyData[0].mnsOff,
+            }}
+            subValue={{
+              end: currencyData && currencyData[0].mnsOn,
+              prefix: "Online: ",
+            }}
+          />
         </div>
       </div>
     </>

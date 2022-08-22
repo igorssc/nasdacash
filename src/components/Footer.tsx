@@ -21,7 +21,7 @@ export const Footer = () => {
             <span className="order-2 md:order-1">
               &copy; nasdacash 2020 - {new Date().getUTCFullYear()}
             </span>
-            <div className="flex gap-6 order-1 md:order-2">
+            <div className="flex gap-6 mx-3 order-1 md:order-2 flex-wrap justify-center">
               <a href="https://explorer2.nasda.cash" target="_blank">
                 <Binoculars size={32} color="#ffffff" />
               </a>

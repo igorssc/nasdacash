@@ -11,7 +11,7 @@ export const WalletDownload = () => {
               <a
                 href="https://github.com/NasdaCash/NSDC/releases/download/v1.0/NasdaCash-macOS.zip"
                 download
-                className="rounded-full p-8 bg-secondary hover:scale-110"
+                className="rounded-full p-6 sm:p-8 bg-secondary hover:scale-110"
               >
                 <AppleLogo size={32} color="#ffffff" />
               </a>
@@ -21,7 +21,7 @@ export const WalletDownload = () => {
               <a
                 href="https://github.com/NasdaCash/NSDC/releases/download/v1.0/NasdaCash-linux.tar.gz"
                 download
-                className="rounded-full p-8 bg-secondary hover:scale-110"
+                className="rounded-full p-6 sm:p-8 bg-secondary hover:scale-110"
               >
                 <LinuxLogo size={32} color="#ffffff" />
               </a>
@@ -31,7 +31,7 @@ export const WalletDownload = () => {
               <a
                 href="https://github.com/NasdaCash/NSDC/releases/download/v1.0/NasdaCash-win64.zip"
                 download
-                className="rounded-full p-8 bg-secondary hover:scale-110"
+                className="rounded-full p-6 sm:p-8 bg-secondary hover:scale-110"
               >
                 <WindowsLogo size={32} color="#ffffff" />
               </a>

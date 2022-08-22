@@ -12,7 +12,7 @@ const Group = ({ title, content, ...rest }: GroupProps) => {
   return (
     <>
       <div {...rest}>
-        <div className="flex flex-col py-8 rounded-xl items-center justify-center border-[1px] bg-secondary border-purple-200/50">
+        <div className="flex h-full flex-col py-8 rounded-xl items-center justify-center border-[1px] bg-secondary border-purple-200/50">
           <h1 className="uppercase font-semibold border-b border-purple-200/50 pb-3 mb-6">
             {title}
           </h1>
@@ -38,10 +38,10 @@ export const MiningDetails = () => {
 
   return (
     <>
-      <div className="container mx-auto py-14 flex flex-col gap-16 items-center justify-center">
+      <div className="container mx-auto py-14 px-4 flex flex-col gap-16 items-center justify-center">
         <h1 className="text-center text-4xl font-black">Mining details</h1>
-        <div className="grid grid-cols-2 gap-8 w-full">
-          <div className="grid grid-cols-3 gap-8 text-center content-between relative z-10 rounded-lg">
+        <div className="grid md:grid-cols-2 gap-4 sm:gap-6 w-full">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6 text-center content-between relative z-10 rounded-lg">
             <Group title="MN Collateral" content="10,000 NSDC" />
             <Group title="Block Time" content="120 seconds" />
             <Group title="Coin Maturity" content="60 blocks" />
@@ -57,9 +57,21 @@ export const MiningDetails = () => {
               } NSDC`}
             />
             <Group title="Total Supply" content="60,000,000 NSDC" />
-            <Group title="Premine" content="25,200,000 NSDC" />
-            <Group title="RPC Report" content="15017" />
-            <Group title="P2P Port" content="15018" />
+            <Group
+              title="Premine"
+              content="25,200,000 NSDC"
+              className="hidden sm:block"
+            />
+            <Group
+              title="RPC Report"
+              content="15017"
+              className="hidden sm:block"
+            />
+            <Group
+              title="P2P Port"
+              content="15018"
+              className="hidden sm:block"
+            />
           </div>
           <div className="relative z-10 border-[1px] rounded-lg border-purple-200/50 bg-secondary overflow-auto">
             <table className="blocks-table">

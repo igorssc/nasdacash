@@ -13,7 +13,7 @@ export const Question = ({ question, answer }: QuestionsProps) => {
         <Disclosure>
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex w-full justify-between px-4 py-8 text-left text-base font-bold text-white">
+              <Disclosure.Button className="flex w-full justify-between px-2 py-8 text-left text-base font-bold text-white">
                 <span>{question}</span>
                 <CaretUp
                   className={`${
@@ -29,7 +29,7 @@ export const Question = ({ question, answer }: QuestionsProps) => {
                 leaveFrom="transform scale-100 opacity-100"
                 leaveTo="transform scale-95 opacity-0"
               >
-                <Disclosure.Panel className="px-4 pb-8 text-sm text-justify font-light leading-6">
+                <Disclosure.Panel className="px-2 pb-8 text-sm text-justify font-light leading-6">
                   <p
                     dangerouslySetInnerHTML={{
                       __html: answer,

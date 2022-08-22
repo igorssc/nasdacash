@@ -33,7 +33,7 @@ export const CommonQuestions = () => {
     <>
       <div className="px-4 pt-16 pb-10 flex flex-col gap-16 items-center">
         <h1 className="text-center text-4xl font-black relative z-10">FAQs</h1>
-        <div className="container mx-auto w-full p-2 relative z-10">
+        <div className="container mx-auto w-full relative z-10">
           {questions.map((question) => (
             <Question question={question.question} answer={question.answer} />
           ))}
