@@ -40,7 +40,7 @@ export const MiningDetails = () => {
     <>
       <div className="container mx-auto py-14 px-4 flex flex-col gap-16 items-center justify-center">
         <h1 className="text-center text-4xl font-black">Mining details</h1>
-        <div className="grid md:grid-cols-2 gap-4 sm:gap-6 w-full">
+        <div className="grid xl:grid-cols-2 gap-4 sm:gap-6 w-full">
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6 text-center content-between relative z-10 rounded-lg">
             <Group title="MN Collateral" content="10,000 NSDC" />
             <Group title="Block Time" content="120 seconds" />
