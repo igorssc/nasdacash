@@ -41,7 +41,7 @@ const Title = withErrorBoundary(() => {
 export const Header = () => {
   return (
     <>
-      <div className="overflow-hidden relative py-10 lg:py-10 bg-header">
+      <div className="overflow-hidden relative py-10 lg:pb-28 lg:pt-16 bg-header">
         <img
           src={heroGlow}
           alt="glow from background"
