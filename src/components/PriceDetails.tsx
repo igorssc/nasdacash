@@ -64,7 +64,7 @@ export const PriceDetails = () => {
           alt=""
           className="absolute -top-[49px] h-[50px] w-full z-30"
         />
-        <div className="container px-10 md:mx-auto flex flex-col md:flex-row gap-6 md:gap-0 justify-around items-center md:items-start text-center">
+        <div className="container px-10 md:mx-auto flex flex-col md:flex-row gap-6 md:gap-0 justify-center md:justify-around text-center">
           <Group
             title="Price"
             value={{
