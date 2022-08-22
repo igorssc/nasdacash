@@ -21,7 +21,7 @@ const Group = ({ title, value, subValue }: GroupProps) => {
   return (
     <div className="flex flex-col gap-5 group-price-details w-full">
       <h1 className="text-base font-normal">{title}</h1>
-      <p className="text-2xl md:text-4xl text-secondary font-light">
+      <p className="text-2xl lg:text-4xl text-secondary font-light">
         {value.end ? (
           <CountUp
             end={value.end}
@@ -35,7 +35,7 @@ const Group = ({ title, value, subValue }: GroupProps) => {
         ) : (
           0
         )}
-        <small className="block text-secondary/60 text-sm md:text-base">
+        <small className="block text-secondary/60 text-sm lg:text-base">
           {subValue?.end && (
             <CountUp
               end={subValue.end}
@@ -64,7 +64,7 @@ export const PriceDetails = () => {
           alt=""
           className="absolute -top-[49px] h-[50px] w-full z-30"
         />
-        <div className="container px-10 md:mx-auto flex flex-col md:flex-row gap-6 md:gap-0 justify-center md:justify-around text-center">
+        <div className="container px-10 mx-auto flex flex-col lg:flex-row gap-6 lg:gap-0 lg:justify-around text-center">
           <Group
             title="Price"
             value={{
@@ -76,6 +76,14 @@ export const PriceDetails = () => {
               end: currencyData && currencyData[0].btc,
               decimals: 8,
               prefix: "BTC ",
+            }}
+          />
+          <Group
+            title="Market cap"
+            value={{
+              end: currencyData && currencyData[0].usd * currencyData[0].supply,
+              decimals: 2,
+              prefix: "$ ",
             }}
           />
           <Group
