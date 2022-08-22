@@ -10,6 +10,10 @@ body {
   @apply animate-typist;
 }
 
+.question + .question {
+  @apply border-t-[1px] border-purple-200/50;
+}
+
 .blocks-table {
   @apply text-center w-full;
 }

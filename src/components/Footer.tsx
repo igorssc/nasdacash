@@ -1,4 +1,5 @@
 import {
+  Binoculars,
   DiscordLogo,
   GithubLogo,
   InstagramLogo,
@@ -19,6 +20,9 @@ export const Footer = () => {
           <div className="flex gap-8 items-center">
             <span>&copy; nasdacash 2020 - {new Date().getUTCFullYear()}</span>
             <div className="flex gap-6">
+              <a href="https://explorer2.nasda.cash" target="_blank">
+                <Binoculars size={32} color="#ffffff" />
+              </a>
               <a href="https://twitter.com/NsdCash" target="_blank">
                 <TwitterLogo size={32} color="#ffffff" />
               </a>

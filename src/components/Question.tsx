@@ -9,7 +9,7 @@ interface QuestionsProps {
 export const Question = ({ question, answer }: QuestionsProps) => {
   return (
     <>
-      <div className="border-y-[1px] border-purple-200/50">
+      <div className="question">
         <Disclosure>
           {({ open }) => (
             <>
