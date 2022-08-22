@@ -31,7 +31,7 @@ const Title = withErrorBoundary(() => {
             rency
           </span>
         </span>
-        <div className="my-8" />
+        <div className="my-3 md:my-8" />
         <span className="font-regular">of the future!</span>
       </Typist>
     </>
@@ -54,7 +54,7 @@ export const Header = () => {
               alt="Logo from Nasdacash"
               className="w-52 max-w-full h-auto relative z-10"
             />
-            <h1 className="text-6xl text-center relative z-10 tracking-wider">
+            <h1 className="text-3xl md:text-6xl text-center relative z-10 tracking-wider">
               <Title />
             </h1>
             <p className="text-xl font-light leading-8">
@@ -66,7 +66,7 @@ export const Header = () => {
             </p>
           </div>
           {/* <div className="flex items-center justify-center z-20"> */}
-          <div className="w-full flex items-center justify-center z-20 h-60 sm:h-72 lg:h-auto -bottom-32 sm:-bottom-44 md:-bottom-56 lg:bottom-0 relative">
+          <div className="w-full flex items-center justify-center z-20 h-60 sm:h-72 lg:h-auto -bottom-24 sm:-bottom-44 md:-bottom-56 lg:bottom-0 relative">
             <World />
           </div>
         </div>

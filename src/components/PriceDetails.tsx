@@ -21,7 +21,7 @@ const Group = ({ title, value, subValue }: GroupProps) => {
   return (
     <div className="flex flex-col gap-5 group-price-details w-full">
       <h1 className="text-base font-normal">{title}</h1>
-      <p className="text-4xl text-secondary font-light">
+      <p className="text-2xl md:text-4xl text-secondary font-light">
         {value.end ? (
           <CountUp
             end={value.end}
@@ -35,7 +35,7 @@ const Group = ({ title, value, subValue }: GroupProps) => {
         ) : (
           0
         )}
-        <small className="block text-secondary/60 text-base">
+        <small className="block text-secondary/60 text-sm md:text-base">
           {subValue?.end && (
             <CountUp
               end={subValue.end}
@@ -64,7 +64,7 @@ export const PriceDetails = () => {
           alt=""
           className="absolute -top-[49px] h-[50px] w-full z-30"
         />
-        <div className="container mx-auto flex flex-col md:flex-row gap-6 md:gap-0 justify-around items-center text-center">
+        <div className="container px-10 md:mx-auto flex flex-col md:flex-row gap-6 md:gap-0 justify-around items-center text-center">
           <Group
             title="Price"
             value={{
