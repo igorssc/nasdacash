@@ -10,5 +10,5 @@ export const World = () => {
     }
   }, []);
 
-  return <div id="scene-container"></div>;
+  return <div id="scene-container" className="lg:w-full lg:h-full"></div>;
 };

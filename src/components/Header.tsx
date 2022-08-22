@@ -48,7 +48,7 @@ export const Header = () => {
           className="absolute w-[200%] top-[50%] left-[50%] z-10 -translate-x-2/4 -translate-y-2/4 scale-[2]"
         />
         <div className="grid lg:grid-cols-2 min-h-[40rem] lg:container mx-auto">
-          <div className="flex flex-col text-center items-center justify-center gap-10 z-20 px-4 lg:px-0">
+          <div className="flex flex-col items-center justify-center gap-10 z-20 px-4 lg:px-0">
             <img
               src={logoImg}
               alt="Logo from Nasdacash"
@@ -57,7 +57,7 @@ export const Header = () => {
             <h1 className="text-3xl md:text-6xl text-center relative z-10 tracking-wider">
               <Title />
             </h1>
-            <p className="text-xl font-light leading-8">
+            <p className="text-xl font-light leading-8 text-justify sm:text-center">
               Nasdacash is known as a digital currency with a focus on Ease of
               use, anonymity and transaction speed. These features are
               implemented on a network of dedicated servers known as

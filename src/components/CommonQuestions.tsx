@@ -35,7 +35,11 @@ export const CommonQuestions = () => {
         <h1 className="text-center text-4xl font-black relative z-10">FAQs</h1>
         <div className="container mx-auto w-full relative z-10">
           {questions.map((question) => (
-            <Question question={question.question} answer={question.answer} />
+            <Question
+              question={question.question}
+              answer={question.answer}
+              key={question.question}
+            />
           ))}
         </div>
       </div>
