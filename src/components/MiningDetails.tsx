@@ -12,7 +12,7 @@ const Group = ({ title, content, ...rest }: GroupProps) => {
   return (
     <>
       <div {...rest}>
-        <div className="flex h-full flex-col py-8 rounded-xl items-center justify-center border-[1px] bg-secondary border-purple-200/50">
+        <div className="flex h-full flex-col py-8 rounded-xl items-center justify-center bg-miningDetails ">
           <h1 className="uppercase font-semibold border-b border-purple-200/50 pb-3 mb-6">
             {title}
           </h1>
@@ -73,7 +73,7 @@ export const MiningDetails = () => {
               className="hidden sm:block"
             />
           </div>
-          <div className="relative z-10 border-[1px] rounded-lg border-purple-200/50 bg-secondary overflow-auto">
+          <div className="relative z-10 rounded-lg bg-miningDetails overflow-auto">
             <table className="blocks-table">
               <thead>
                 <tr>
