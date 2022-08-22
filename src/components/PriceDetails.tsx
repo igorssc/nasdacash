@@ -12,7 +12,7 @@ export const PriceDetails = () => {
         <img
           src={roundedBorder}
           alt=""
-          className="absolute -top-[50px] h-[50px] w-full z-10"
+          className="absolute -top-[49px] h-[50px] w-full z-30"
         />
         <div className="container mx-auto flex flex-row justify-around text-center">
           <div className="flex flex-col gap-5">
@@ -88,7 +88,7 @@ export const PriceDetails = () => {
             <p className="text-4xl text-secondary font-light">
               {currencyData ? (
                 <CountUp
-                  end={currencyData[0].mnsOn}
+                  end={currencyData[0].mnsOn + currencyData[0].mnsOff}
                   duration={1}
                   separator=","
                   decimals={0}
@@ -97,6 +97,20 @@ export const PriceDetails = () => {
               ) : (
                 0
               )}
+              <small className="block text-secondary/60 text-base">
+                {currencyData ? (
+                  <CountUp
+                    end={currencyData[0].mnsOn}
+                    duration={1}
+                    separator=","
+                    decimals={0}
+                    prefix="Online: "
+                    enableScrollSpy={true}
+                  />
+                ) : (
+                  0
+                )}
+              </small>
             </p>
           </div>
         </div>

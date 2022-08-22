@@ -41,21 +41,21 @@ const Title = withErrorBoundary(() => {
 export const Header = () => {
   return (
     <>
-      <div className="overflow-hidden relative py-28 bg-header">
+      <div className="overflow-hidden relative py-10 lg:py-10 bg-header">
         <img
           src={heroGlow}
           alt="glow from background"
           className="absolute w-[200%] top-[50%] left-[50%] z-10 -translate-x-2/4 -translate-y-2/4 scale-[2]"
         />
-        <div className="grid md:grid-cols-2 min-h-[40rem] container mx-auto">
-          <div className="flex flex-col text-center items-center justify-center gap-10 z-20">
+        <div className="grid lg:grid-cols-2 min-h-[40rem] lg:container mx-auto">
+          <div className="flex flex-col text-center items-center justify-center gap-10 z-20 px-4 lg:px-0">
             <img
               src={logoImg}
               alt="Logo from Nasdacash"
               className="w-52 max-w-full h-auto relative z-10"
             />
             <h1 className="text-6xl text-center relative z-10 tracking-wider">
-              <Title />
+              {/* <Title /> */}
             </h1>
             <p className="text-xl font-light leading-8">
               Nasdacash is known as a digital currency with a focus on Ease of
@@ -65,7 +65,8 @@ export const Header = () => {
               not available on conventional blockchains.
             </p>
           </div>
-          <div className="flex items-center justify-center z-20">
+          {/* <div className="flex items-center justify-center z-20"> */}
+          <div className="w-full flex items-center justify-center z-20 h-60 sm:h-72 lg:h-auto -bottom-32 sm:-bottom-44 md:-bottom-56 lg:bottom-0 relative">
             <World />
           </div>
         </div>

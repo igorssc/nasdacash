@@ -61,7 +61,7 @@ export const MiningDetails = () => {
             <Group title="RPC Report" content="15017" />
             <Group title="P2P Port" content="15018" />
           </div>
-          <div className="relative z-10 border-[1px] rounded-lg border-purple-200/50 bg-secondary">
+          <div className="relative z-10 border-[1px] rounded-lg border-purple-200/50 bg-secondary overflow-auto">
             <table className="blocks-table">
               <thead>
                 <tr>
