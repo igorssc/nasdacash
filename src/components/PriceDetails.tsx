@@ -15,11 +15,16 @@ interface GroupProps {
     decimals?: number;
     prefix?: string;
   };
+  className?: string;
 }
 
-const Group = ({ title, value, subValue }: GroupProps) => {
+const Group = ({ title, value, subValue, className }: GroupProps) => {
   return (
-    <div className="flex flex-col gap-5 group-price-details w-full">
+    <div
+      className={`flex flex-col gap-5 w-full group-price-details ${
+        className ?? ""
+      }`}
+    >
       <h1 className="text-base font-normal">{title}</h1>
       <p className="text-2xl lg:text-4xl text-secondary font-light">
         {value.end ? (
@@ -64,7 +69,7 @@ export const PriceDetails = () => {
           alt=""
           className="absolute -top-[49px] h-[50px] w-full z-30"
         />
-        <div className="container px-10 mx-auto flex flex-col lg:flex-row gap-6 lg:gap-0 lg:justify-around text-center">
+        <div className="container px-2 md:px-10 mx-auto grid grid-cols-2 lg:flex lg:flex-row gap-6 lg:gap-0 lg:justify-around text-center">
           <Group
             title="Price"
             value={{
@@ -93,12 +98,6 @@ export const PriceDetails = () => {
             }}
           />
           <Group
-            title="Total addresses"
-            value={{
-              end: currencyData && currencyData[0].countCarverAddresses,
-            }}
-          />
-          <Group
             title="Masternodes"
             value={{
               end:
@@ -108,6 +107,13 @@ export const PriceDetails = () => {
               end: currencyData && currencyData[0].mnsOn,
               prefix: "Online: ",
             }}
+          />
+          <Group
+            title="Total addresses"
+            value={{
+              end: currencyData && currencyData[0].countCarverAddresses,
+            }}
+            className="hidden lg:flex"
           />
         </div>
       </div>
