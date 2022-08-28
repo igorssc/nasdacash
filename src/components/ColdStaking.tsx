@@ -9,7 +9,7 @@ export const ColdStaking = () => {
   return (
     <>
       <WavesBackground>
-        <Container>
+        <Container className="!pb-0 md:pb-14">
           <MiningHighlight
             title="Secure & Effortless"
             subTitle="Cold Staking"

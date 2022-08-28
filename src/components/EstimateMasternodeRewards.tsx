@@ -14,11 +14,11 @@ export const EstimateMasternodeRewards = () => {
   return (
     <>
       <div className="bg-miningDetails relative z-10">
-        <Container className="lg:flex-row lg:gap-6 !justify-between !px-8">
-          <div className="flex flex-col gap-14">
-            <h2 className="text-2xl">
+        <Container className="lg:flex-row lg:gap-6 !justify-between md:px-8">
+          <div className="flex flex-col gap-14 text-center lg:text-left">
+            <h2 className="text-xl lg:text-2xl">
               Estimate your{" "}
-              <span className="text-5xl block font-black mt-4">
+              <span className="text-4xl lg:text-5xl block font-black mt-4">
                 Masternode Rewards
               </span>
             </h2>
@@ -30,8 +30,10 @@ export const EstimateMasternodeRewards = () => {
               the active Masternodes in the NSDC network.
             </p>
           </div>
-          <div className="border-[1px] border-purple-500 rounded-3xl py-8 px-10 lg:px-14 xl:px-20 flex flex-col justify-center items-center gap-6">
-            <span className="text-2xl text-center">Number of Masternodes:</span>
+          <div className="border-[1px] border-purple-500 rounded-3xl py-8 px-4 md:px-10 lg:px-14 xl:px-20 flex flex-col justify-center items-center gap-6">
+            <span className="text-xl lg:text-2xl text-center">
+              Number of Masternodes:
+            </span>
             <div className="w-full flex">
               <span
                 className="px-6 bg-primary rounded-l-3xl font-black text-3xl cursor-pointer"
@@ -94,7 +96,7 @@ export const EstimateMasternodeRewards = () => {
             ].map(([title, value]) => (
               <div className="flex flex-col gap-3 justify-center items-center w-full">
                 <span className="text-lg">{title}</span>
-                <span className="font-black text-2xl bg-primary w-full text-center rounded-3xl py-2">
+                <span className="font-black text-xl lg:text-2xl bg-primary w-full text-center rounded-3xl py-2">
                   {value} NSDC
                 </span>
               </div>

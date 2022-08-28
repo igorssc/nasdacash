@@ -20,17 +20,20 @@ export const BackgroundParticles = ({
 
   return (
     <>
-      <div
-        id="particles-js"
-        className={`w-full h-full"
+      <div className="hidden md:block">
+        <div
+          id="particles-js"
+          className={`w-full h-full"
         ${className ? className : ""}`}
-      >
-        <canvas
-          className={`particles-js-canvas-el w-full absolute`}
-          height={0}
-        ></canvas>
-        {children}
+        >
+          <canvas
+            className={`particles-js-canvas-el w-full absolute`}
+            height={0}
+          ></canvas>
+          {children}
+        </div>
       </div>
+      <div className="block md:hidden">{children}</div>
     </>
   );
 };

@@ -15,11 +15,13 @@ export const MiningHighlight = ({
     <>
       <div className="container mx-auto py-10 md:py-20 grid md:grid-cols-2 text-center md:text-left">
         <div>
-          <h1 className="text-3xl">
+          <h1 className="text-xl lg:text-3xl">
             {title}{" "}
-            <span className="block text-6xl font-black mt-4">{subTitle}</span>
+            <span className="block text-4xl lg:text-6xl font-black mt-4">
+              {subTitle}
+            </span>
           </h1>
-          <p className="mt-8 text-xl">{resume}</p>
+          <p className="mt-8 text-lg lg:text-xl">{resume}</p>
         </div>
         <div className="flex justify-center items-center">
           <img

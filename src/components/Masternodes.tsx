@@ -12,7 +12,7 @@ export const Masternodes = () => {
   return (
     <>
       <WavesBackground>
-        <Container>
+        <Container className="!pb-0 md:pb-14">
           <MiningHighlight
             title="Specialized NSDC"
             subTitle="Masternodes"

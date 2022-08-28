@@ -9,7 +9,7 @@ export const ProofOfStake = () => {
   return (
     <>
       <WavesBackground>
-        <Container>
+        <Container className="!pb-0 md:pb-14">
           <MiningHighlight
             title="Advanced"
             subTitle="Proof of Stake"
