@@ -1,4 +1,5 @@
 import { Question } from "./Question";
+import { Title } from "./Title";
 
 const questions = [
   {
@@ -14,17 +15,47 @@ const questions = [
   {
     question: "What is masternode?",
     answer:
-      "Masternodes are powerful servers backed by collateral held on the Nasdacash network, and are designed to provide advanced services and governance on the blockchain. Masternodes host full copies of the blockchain and provide a unique second layer of services for the network. Masternodes must be backed by Nasdacash-denominated collateral, and in return, their operators receive regular payments for the services they provide to the network.",
+      "A Masternode is a specially configured wallet that will support the network in more ways than a normal staking wallet. These functions require 10,000 NSDCs to start and therefore the user is rewarded for both supporting the network and locking the collateral.",
   },
   {
-    question: "What are the advantages of masternodes?",
+    question: "Why should I run a Masternode?",
     answer:
-      "Unlike many cryptocurrencies that only use the POW engine, in digital currencies that use masternode it is possible to earn only by keeping this service active. By keeping a masternode active on the network it is possible to receive rewards that vary according to each currency. Basically part of the block value is reserved to reward masternodes. It can be concluded that it is a form of “holding” and being remunerated for it.",
+      "Being a Masternode holder is incentivized by being rewarded more NSDC than stakers through the higher block reward. Masternode reward is equal to 80%, while staking reward is 20% per block.",
   },
   {
-    question: "What is mining PoS?",
+    question: "What does it mean to lock coins as Masternode collateral?",
     answer:
-      "PoS mining works like a kind of lottery. It dispenses with the use of electricity and also the need to own large machines. In PoS, the process does not work through these machines, but through the nodes in the network. Thus, the nodes function as validators of the blocks, since there is no miner figure.<br/> Mining via PoS requires the user to be able to prove that they own a certain amount of cryptocurrencies. To do this, he needs to send this amount of cryptocurrency to a certain address. With this, the cryptocurrencies will be locked at that address, serving as proof of the user's participation. At the end, the user receives back the blocked cryptocurrencies, along with the reward.",
+      "Your 10,000 NSDC is still yours to completely control, however should you spend the 10K NSDC your masternode will stop and you will no longer earn block rewards. The 10,000 locked NSDCs simply act as collateral and allow you and your masternode server to secure the NSDC network.",
+  },
+  {
+    question: "What Are The Minimum Hardware Requirements?",
+    answer:
+      "It is recommended that the machine running the NSDC wallet has 2GB RAM, although 1GB RAM with 1GB swap is fine. The NSDC blockchain is only ~18GB, but, for future use it is recommended to have at least 30GB free storage space. Additionally, a single core processor is sufficient to run the network. With these low requirements, it’s possible to run the entire network on a 2GB RAM model Raspberry Pi.",
+  },
+  {
+    question: "What is a Proof of Stake?",
+    answer:
+      "Proof of Stake is an emerging consensus mechanism that needs to be performed in order to create a new group of trustless transactions (the so-called block) on a distributed ledger called blockchain. In the new age of Digital Currencies, there has to be something to back the creation of the coins, and with that comes Proof of Stake. It is the green way of receiving (staking) crypto in comparison to the Proof of Work coins you have probably heard of with Bitcoin or Monero. They use more energy than a small country to power their blockchain. NSDC uses far less energy than Bitcoin or Monero.",
+  },
+  {
+    question: "What are the advantages of PoS over PoW?",
+    answer:
+      "Compared to the PoW cryptocurrencies like Bitcoin or Monero, it is far easier and less costly to participate in the network and receive rewards with NSDC. You can stake even with 1 NSDC, and with NSDC's Cold Staking, you have the opportunity to keep your energy and hardware costs as low as possible.",
+  },
+  {
+    question: "What is Staking?",
+    answer:
+      "Staking is the process of locking your coins for any time period set by you in order to help the network achieve consensus of proof of stake by validating every transaction that occurs on the network to be written permanently to the blockchain. In return stakers that mint the next block are rewarded a block reward.",
+  },
+  {
+    question: "How does the staking work?",
+    answer:
+      "Whenever an user has at least 1 NSDC in their fully synchronized NSDC core wallet, that node then is permitted to participate in the network with its corresponding amount of stake. NSDC uses an advanced Proof of Stake algorithm, which effectively secures the network against malicious actors. This allows NSDC owners to receive block rewards just by helping to secure the network. Anyone who owns NSDC can stake and receive rewards.",
+  },
+  {
+    question: "How can I receive NSDCs as the rewards with Proof of Stake?",
+    answer:
+      "It is simple. Buy NSDCs on the exchange, move coins to your wallet, hold, and unlock your wallet for staking. The more coins you hold in your wallet, the more likely you will get a reward.",
   },
 ];
 
@@ -32,14 +63,10 @@ export const CommonQuestions = () => {
   return (
     <>
       <div className="px-4 pt-16 pb-10 flex flex-col gap-16 items-center">
-        <h1 className="text-center text-4xl font-black relative z-10">FAQs</h1>
+        <Title title="FAQs" />
         <div className="container mx-auto w-full relative z-10">
-          {questions.map((question) => (
-            <Question
-              question={question.question}
-              answer={question.answer}
-              key={question.question}
-            />
+          {questions.map(({ question, answer }) => (
+            <Question question={question} answer={answer} key={question} />
           ))}
         </div>
       </div>

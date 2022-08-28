@@ -1,11 +1,13 @@
 import { Footer } from "./components/Footer";
+import { ScrollTopButton } from "./components/ScrollTopButton";
 import { ExplorerProvider } from "./contexts/ExplorerContext";
-import { Home } from "./Home";
+import Router from "./Router";
 
 function App() {
   return (
     <ExplorerProvider>
-      <Home />
+      <Router />
+      <ScrollTopButton />
       <Footer />
     </ExplorerProvider>
   );

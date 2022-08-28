@@ -1,15 +1,15 @@
 import networkImg from "../assets/network.png";
+import { Container } from "./Container";
+import { Title } from "./Title";
 
 export const About = () => {
   return (
     <>
-      <div className="container m-auto flex flex-col justify-around px-4 pt-16 pb-10">
+      <Container>
         <div className="grid lg:grid-cols-2 items-center justify-center gap-20 lg:gap-0">
-          <div>
-            <h1 className="text-center text-4xl font-black mb-16 relative z-10">
-              Nasdacash
-            </h1>
-            <div className="font-light flex flex-col gap-4">
+          <div className="flex items-center justify-center flex-col gap-16">
+            <Title title="Nasdacash" />
+            <div className="flex flex-col gap-4">
               <p className="text-justify relative z-10">
                 Nasdacash is a cryptocurrency focused on offering freedom to
                 consumers who want to enjoy the convenience of Moderna shopping,
@@ -46,7 +46,7 @@ export const About = () => {
             />
           </div>
         </div>
-      </div>
+      </Container>
     </>
   );
 };

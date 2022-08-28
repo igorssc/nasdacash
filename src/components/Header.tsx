@@ -1,42 +1,7 @@
-import Typist from "react-typist";
-import { useErrorBoundary, withErrorBoundary } from "react-use-error-boundary";
 import heroGlow from "../assets/hero-glow.svg";
 import logoImg from "../assets/logo.png";
 import { World } from "../utils/world";
-
-const Title = withErrorBoundary(() => {
-  const [error] = useErrorBoundary();
-
-  if (error) {
-    return (
-      <>
-        <span className="font-black">
-          The <span className="text-tertiary">cryptocurrency</span>
-        </span>
-        <div className="my-8" />
-        <span className="font-regular">of the future!</span>
-      </>
-    );
-  }
-
-  return (
-    <>
-      <Typist startDelay={1000} className="typist">
-        <span className="font-black">
-          The{" "}
-          <span className="text-tertiary">
-            cryptocurrency
-            <Typist.Backspace count={5} delay={1000} />
-            <Typist.Delay ms={750} />
-            rency
-          </span>
-        </span>
-        <div className="my-3 md:my-8" />
-        <span className="font-regular">of the future!</span>
-      </Typist>
-    </>
-  );
-});
+import { Slogan } from "./Slogan";
 
 export const Header = () => {
   return (
@@ -55,9 +20,9 @@ export const Header = () => {
               className="w-52 max-w-full h-auto relative z-10"
             />
             <h1 className="text-3xl md:text-6xl text-center relative z-10 tracking-wider">
-              <Title />
+              <Slogan />
             </h1>
-            <p className="text-xl font-light leading-8 text-justify sm:text-center">
+            <p className="text-xl leading-8 text-justify sm:text-center">
               Nasdacash is known as a digital currency with a focus on Ease of
               use, anonymity and transaction speed. These features are
               implemented on a network of dedicated servers known as
@@ -65,7 +30,6 @@ export const Header = () => {
               not available on conventional blockchains.
             </p>
           </div>
-          {/* <div className="flex items-center justify-center z-20"> */}
           <div className="w-full flex items-center justify-center z-20 h-60 sm:h-72 lg:h-auto -bottom-24 sm:-bottom-44 md:-bottom-56 lg:bottom-0 relative">
             <World />
           </div>

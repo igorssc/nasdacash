@@ -9,7 +9,7 @@ interface QuestionsProps {
 export const Question = ({ question, answer }: QuestionsProps) => {
   return (
     <>
-      <div className="question">
+      <div className="border-purple-200/50 border-t-[1px] first:border-0">
         <Disclosure>
           {({ open }) => (
             <>
@@ -29,7 +29,7 @@ export const Question = ({ question, answer }: QuestionsProps) => {
                 leaveFrom="transform scale-100 opacity-100"
                 leaveTo="transform scale-95 opacity-0"
               >
-                <Disclosure.Panel className="px-2 pb-8 text-sm text-justify font-light leading-6">
+                <Disclosure.Panel className="px-2 pb-8 text-sm text-justify leading-6">
                   <p
                     dangerouslySetInnerHTML={{
                       __html: answer,

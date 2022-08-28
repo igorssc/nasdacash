@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
@@ -36,6 +37,11 @@ module.exports = {
         footer: "linear-gradient(to top, #000, #1D072E)",
         miningDetails:
           "radial-gradient(30vw 75% at 67.5% 50%,rgba(162,50,255,.3),rgba(44,11,76,0) 87.5%),linear-gradient(90deg,rgba(44,11,76,.6),rgba(80,15,131,.2) 60%,rgba(44,11,76,.6)),linear-gradient(35deg,rgba(44,11,76,.3),rgba(80,15,131,.3) 37%,rgba(44,11,76,.3) 0,rgba(80,15,131,.3) 76%,rgba(44,11,76,.3) 0,rgba(80,15,131,.3)),linear-gradient(90deg,rgba(44,11,76,.5),rgba(80,15,131,.5) 60%,rgba(44,11,76,.5))",
+        group: "linear-gradient(165deg,rgba(36,24,52,.75),rgba(26,14,42,.75))",
+        banner:
+          "linear-gradient(100deg,rgba(43,9,80,0),rgba(43,9,80,.75),rgba(43,9,80,0))",
+        EstimateMasternodes:
+          "linear-gradient(90deg,rgba(44,11,76,.4),rgba(80,15,131,.2),rgba(44,11,76,.4)),linear-gradient(35deg,rgba(44,11,76,.3),rgba(80,15,131,.3) 45%,rgba(44,11,76,.3) 0,rgba(80,15,131,.3)),linear-gradient(90deg,rgba(44,11,76,.6),rgba(80,15,131,.6),rgba(44,11,76,.6))",
       },
       colors: {
         primary: "#1D072E",
