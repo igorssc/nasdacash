@@ -26,7 +26,7 @@ export const Navbar = () => {
   return (
     <>
       <div className="sticky top-0 z-50 bg-primary border-b-2 border-secondary">
-        <div className="container mx-auto flex flex-row items-center justify-between py-4 px-4">
+        <div className="container mx-auto flex flex-row items-center justify-between py-2 px-4">
           <div>
             <img src={logoImg} alt="logo" className="w-14" />
           </div>
@@ -52,7 +52,7 @@ export const Navbar = () => {
           </div>
         </div>
         {isOpenMenu && (
-          <div className="my-6 lg:hidden navbar">
+          <div className="my-6 lg:hidden navbar px-4">
             <ul className="container mx-auto flex flex-col gap-6">
               {items.map(([item, link], index) => (
                 <li
