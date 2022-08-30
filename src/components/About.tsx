@@ -5,7 +5,7 @@ import { Title } from "./Title";
 export const About = () => {
   return (
     <>
-      <Container>
+      <Container id="about">
         <div className="grid lg:grid-cols-2 items-center justify-center gap-20 lg:gap-0">
           <div className="flex items-center justify-center flex-col gap-16">
             <Title title="Nasdacash" />

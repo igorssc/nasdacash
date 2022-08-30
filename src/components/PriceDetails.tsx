@@ -63,43 +63,46 @@ export const PriceDetails = () => {
           className="absolute -top-[49px] h-[50px] w-full z-30"
         />
         <Container className="px-2 md:px-10 !py-6 grid grid-cols-2 lg:flex lg:flex-row gap-6 lg:gap-0 lg:justify-around text-center">
-          {data.map(({ title, value, subValue, visibleOnMobile = true }) => (
-            <div
-              className={`flex flex-col gap-5 w-full border-gray-400 even:border-l-2 lg:border-l-2 lg:first:border-0 ${
-                visibleOnMobile || "hidden lg:flex"
-              }`}
-            >
-              <h1 className="text-base font-normal">{title}</h1>
-              <p className="text-2xl xl:text-4xl text-secondary">
-                {value.end ? (
-                  <CountUp
-                    end={value.end}
-                    duration={1}
-                    separator=","
-                    decimals={value.decimals || 0}
-                    decimal="."
-                    prefix={value.prefix || ""}
-                    enableScrollSpy={true}
-                  />
-                ) : (
-                  0
-                )}
-                <small className="block text-secondary/60 text-sm xl:text-base">
-                  {subValue?.end && (
+          {data.map(
+            ({ title, value, subValue, visibleOnMobile = true }, index) => (
+              <div
+                key={index}
+                className={`flex flex-col gap-5 w-full border-gray-400 even:border-l-2 lg:border-l-2 lg:first:border-0 ${
+                  visibleOnMobile || "hidden lg:flex"
+                }`}
+              >
+                <h1 className="text-base font-normal">{title}</h1>
+                <p className="text-2xl xl:text-4xl text-secondary">
+                  {value.end ? (
                     <CountUp
-                      end={subValue.end}
+                      end={value.end}
                       duration={1}
                       separator=","
-                      decimals={subValue.decimals || 0}
+                      decimals={value.decimals || 0}
                       decimal="."
-                      prefix={subValue.prefix || ""}
+                      prefix={value.prefix || ""}
                       enableScrollSpy={true}
                     />
+                  ) : (
+                    0
                   )}
-                </small>
-              </p>
-            </div>
-          ))}
+                  <small className="block text-secondary/60 text-sm xl:text-base">
+                    {subValue?.end && (
+                      <CountUp
+                        end={subValue.end}
+                        duration={1}
+                        separator=","
+                        decimals={subValue.decimals || 0}
+                        decimal="."
+                        prefix={subValue.prefix || ""}
+                        enableScrollSpy={true}
+                      />
+                    )}
+                  </small>
+                </p>
+              </div>
+            )
+          )}
         </Container>
       </div>
     </>

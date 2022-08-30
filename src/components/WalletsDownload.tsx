@@ -5,7 +5,7 @@ import { Title } from "./Title";
 export const WalletDownload = () => {
   return (
     <>
-      <div className="bg-footer">
+      <div className="bg-footer" id="wallets">
         <Container>
           <Title title="Wallets" />
           <div className="flex flex-row justify-evenly">

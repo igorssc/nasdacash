@@ -93,8 +93,11 @@ export const EstimateMasternodeRewards = () => {
                   { maximumFractionDigits: 2 }
                 ),
               ],
-            ].map(([title, value]) => (
-              <div className="flex flex-col gap-3 justify-center items-center w-full">
+            ].map(([title, value], index) => (
+              <div
+                className="flex flex-col gap-3 justify-center items-center w-full"
+                key={index}
+              >
                 <span className="text-lg">{title}</span>
                 <span className="font-black text-xl lg:text-2xl bg-primary w-full text-center rounded-3xl py-2">
                   {value} NSDC

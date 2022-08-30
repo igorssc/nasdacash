@@ -29,8 +29,13 @@ export const ProofOfStakeDetails = () => {
             "Fair Stake",
             "Every UTXO has the chance of winning a stake, with a linear reduction in difficulty based on the value of the UTXO. NSDC does not have any age multiplier in the staking algorithm.",
           ],
-        ].map(([icon, title, description]) => (
-          <Block title={title} icon={icon} description={description} />
+        ].map(([icon, title, description], index) => (
+          <Block
+            title={title}
+            icon={icon}
+            description={description}
+            key={index}
+          />
         ))}
       </div>
     </>

@@ -34,15 +34,15 @@ export const CommonQuestions = ({
           }`}
         >
           {type === "disclosure"
-            ? questions.map(({ question, answer }) => (
+            ? questions.map(({ question, answer }, index) => (
                 <QuestionDisclosure
                   question={question}
                   answer={answer}
-                  key={question}
+                  key={index}
                 />
               ))
-            : questions.map(({ question, answer }) => (
-                <Block title={question} description={answer} key={question} />
+            : questions.map(({ question, answer }, index) => (
+                <Block title={question} description={answer} key={index} />
               ))}
         </div>
       </div>

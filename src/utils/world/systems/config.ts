@@ -10,8 +10,6 @@ const canvasWidth = () =>
 
 const canvasHeight = () => canvasWidth() / aspect;
 
-console.log(container()?.offsetHeight ?? 500);
-
 // const canvasHeight = () => container()?.offsetHeight ?? 500;
 // const canvasWidth = () => canvasHeight() * aspect;
 

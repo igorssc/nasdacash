@@ -29,8 +29,11 @@ export const BannerMasternode = () => {
               : "0 NSDC",
           ],
           ["Node Expiration", "120 min"],
-        ].map(([title, value]) => (
-          <div className="flex flex-col items-center justify-center relative z-10">
+        ].map(([title, value], index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center justify-center relative z-10"
+          >
             <p className="text-xl font-black mb-4">{value}</p>
             <h4 className="text-center">{title}</h4>
           </div>

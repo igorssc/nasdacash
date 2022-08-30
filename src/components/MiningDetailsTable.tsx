@@ -110,16 +110,16 @@ export const MiningDetailsTable = () => {
       <table className="text-center w-full [&_th]:px-6 md:[&_th]:px-0 [&_th]:py-4 [&_th]:font-semibold [&_th]:uppercase [&_th]:whitespace-nowrap md:[&_th]:whitespace-normal [&_tr]:border-purple-200/50 [&_tr+tr]:border-t-[1px] [&_td]:py-4">
         <thead>
           <tr>
-            {table.head.map((title) => (
-              <th>{title}</th>
+            {table.head.map((title, index) => (
+              <th key={index}>{title}</th>
             ))}
           </tr>
         </thead>
         <tbody>
-          {table.body.map((row) => (
-            <tr>
-              {row.map((content) => (
-                <td>{content}</td>
+          {table.body.map((row, index) => (
+            <tr key={index}>
+              {row.map((content, secondIndex) => (
+                <td key={secondIndex}>{content}</td>
               ))}
             </tr>
           ))}

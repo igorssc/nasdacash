@@ -29,6 +29,7 @@ export const MiningDetailsBlock = () => {
     <>
       {details.map(([title, content, visibleOnMobile = true]) => (
         <div
+          key={title as string}
           className={`flex h-full flex-col py-8 rounded-xl items-center justify-center bg-miningDetails ${
             visibleOnMobile || "hidden sm:flex"
           }`}

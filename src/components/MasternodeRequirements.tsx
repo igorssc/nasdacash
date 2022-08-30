@@ -13,8 +13,11 @@ export const MasternodesRequirements = () => {
           [nsdcPerNodeImg, "10,000 NSDC per node"],
           [dedicatedVPSImg, "Dedicated IP"],
           [uptimeVps, "24hr uptime VPS"],
-        ].map(([icon, content]) => (
-          <div className="bg-miningDetails py-10 px-3 md:p-10 flex flex-col items-center justify-center relative z-10">
+        ].map(([icon, content], index) => (
+          <div
+            key={index}
+            className="bg-miningDetails py-10 px-3 md:p-10 flex flex-col items-center justify-center relative z-10"
+          >
             <ReactSVG
               src={icon}
               className="w-16 md:w-24 fill-purple-500 mb-5"

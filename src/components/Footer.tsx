@@ -36,8 +36,8 @@ export const Footer = () => {
               &copy; nasdacash 2020 - {new Date().getUTCFullYear()}
             </span>
             <div className="flex gap-6 mx-3 order-1 lg:order-2 flex-wrap justify-center">
-              {socialNetwork.map(({ link, Icon }) => (
-                <a href={link} target="_blank">
+              {socialNetwork.map(({ link, Icon }, index) => (
+                <a href={link} target="_blank" key={index}>
                   <Icon size={32} color="#ffffff" />
                 </a>
               ))}

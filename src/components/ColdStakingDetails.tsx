@@ -29,8 +29,13 @@ export const ColdStakingDetails = () => {
             "Non-Custodial Staking",
             "Hot wallets control which delegated balances are staked, but only the owner of the actual NSDC retains the ability to spend the delegated coins.",
           ],
-        ].map(([icon, title, description]) => (
-          <Block title={title} icon={icon} description={description} />
+        ].map(([icon, title, description], index) => (
+          <Block
+            title={title}
+            icon={icon}
+            description={description}
+            key={index}
+          />
         ))}
       </div>
     </>
