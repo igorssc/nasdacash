@@ -62,7 +62,7 @@ export const PriceDetails = () => {
           alt=""
           className="absolute -top-[49px] h-[50px] w-full z-30"
         />
-        <Container className="px-2 md:px-10 grid grid-cols-2 lg:flex lg:flex-row gap-6 lg:gap-0 lg:justify-around text-center">
+        <Container className="px-2 md:px-10 !py-6 grid grid-cols-2 lg:flex lg:flex-row gap-6 lg:gap-0 lg:justify-around text-center">
           {data.map(({ title, value, subValue, visibleOnMobile = true }) => (
             <div
               className={`flex flex-col gap-5 w-full border-gray-400 even:border-l-2 lg:border-l-2 lg:first:border-0 ${
@@ -70,7 +70,7 @@ export const PriceDetails = () => {
               }`}
             >
               <h1 className="text-base font-normal">{title}</h1>
-              <p className="text-2xl lg:text-4xl text-secondary">
+              <p className="text-2xl xl:text-4xl text-secondary">
                 {value.end ? (
                   <CountUp
                     end={value.end}
@@ -84,7 +84,7 @@ export const PriceDetails = () => {
                 ) : (
                   0
                 )}
-                <small className="block text-secondary/60 text-sm lg:text-base">
+                <small className="block text-secondary/60 text-sm xl:text-base">
                   {subValue?.end && (
                     <CountUp
                       end={subValue.end}

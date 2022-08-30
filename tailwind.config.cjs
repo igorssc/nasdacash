@@ -33,6 +33,10 @@ module.exports = {
         sans: "Roboto, sans-serif",
       },
       backgroundImage: {
+        featured:
+          "url(../assets/feature-box-bg.svg),linear-gradient(90deg,#2b1542,#230f3c)",
+        featuredHover:
+          "url(../assets/feature-box-bg.svg),linear-gradient(90deg,#500f83,#2c0b4c 80%)",
         header: "linear-gradient(to bottom, #000, #1D072E)",
         footer: "linear-gradient(to top, #000, #1D072E)",
         miningDetails:

@@ -1550,3 +1550,9 @@ window.particlesJS.load = function (tag_id, config_json, callback) {
   window.particlesJS(tag_id, config_json);
   if (callback) callback();
 };
+
+window.particlesJS.destroy = () => {
+  cancelAnimationFrame(pJS.fn.drawAnimFrame);
+  canvas_el.remove();
+  pJSDom = null;
+};

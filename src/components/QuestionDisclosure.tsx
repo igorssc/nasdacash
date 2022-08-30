@@ -6,7 +6,7 @@ interface QuestionsProps {
   answer: string;
 }
 
-export const Question = ({ question, answer }: QuestionsProps) => {
+export const QuestionDisclosure = ({ question, answer }: QuestionsProps) => {
   return (
     <>
       <div className="border-purple-200/50 border-t-[1px] first:border-0">
