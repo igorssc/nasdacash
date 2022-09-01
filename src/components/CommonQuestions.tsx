@@ -1,4 +1,4 @@
-import { Block } from "./Block";
+import { Box } from "./Box";
 import { QuestionDisclosure } from "./QuestionDisclosure";
 import { Title } from "./Title";
 
@@ -42,7 +42,7 @@ export const CommonQuestions = ({
                 />
               ))
             : questions.map(({ question, answer }, index) => (
-                <Block title={question} description={answer} key={index} />
+                <Box title={question} description={answer} key={index} />
               ))}
         </div>
       </div>

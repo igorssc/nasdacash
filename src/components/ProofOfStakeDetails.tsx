@@ -2,7 +2,7 @@ import consistentBlockTimesImg from "../assets/consistent-block-times.svg";
 import fairStakeImg from "../assets/fair-stake.svg";
 import lessEnergyImg from "../assets/less-energy.svg";
 import securityImg from "../assets/security.svg";
-import { Block } from "./Block";
+import { Box } from "./Box";
 
 export const ProofOfStakeDetails = () => {
   return (
@@ -30,7 +30,7 @@ export const ProofOfStakeDetails = () => {
             "Every UTXO has the chance of winning a stake, with a linear reduction in difficulty based on the value of the UTXO. NSDC does not have any age multiplier in the staking algorithm.",
           ],
         ].map(([icon, title, description], index) => (
-          <Block
+          <Box
             title={title}
             icon={icon}
             description={description}

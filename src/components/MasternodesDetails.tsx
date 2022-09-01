@@ -2,7 +2,7 @@ import blockRewardImg from "../assets/block-reward.svg";
 import decentralizedImg from "../assets/decentralized-governance.svg";
 import secondLayerImg from "../assets/second-layer-innovations.svg";
 import securityImg from "../assets/security.svg";
-import { Block } from "./Block";
+import { Box } from "./Box";
 
 export const MasternodesDetails = () => {
   return (
@@ -30,7 +30,7 @@ export const MasternodesDetails = () => {
             "Masternode owners are rewarded for their service to the network, with a portion of the block reward being sent to a masternode in a round robin fashion on the creation of each block, and are also given voting rights to participate in governance decisions.",
           ],
         ].map(([icon, title, description], index) => (
-          <Block
+          <Box
             title={title}
             icon={icon}
             description={description}

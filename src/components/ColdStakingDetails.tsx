@@ -2,7 +2,7 @@ import hardwareRequirementsImg from "../assets/hardware-requirements.svg";
 import lessEnergyImg from "../assets/less-energy.svg";
 import nonCustodialStakingImg from "../assets/non-custodial-staking.svg";
 import offlineSolutionsImg from "../assets/offline-solutions.svg";
-import { Block } from "./Block";
+import { Box } from "./Box";
 
 export const ColdStakingDetails = () => {
   return (
@@ -30,7 +30,7 @@ export const ColdStakingDetails = () => {
             "Hot wallets control which delegated balances are staked, but only the owner of the actual NSDC retains the ability to spend the delegated coins.",
           ],
         ].map(([icon, title, description], index) => (
-          <Block
+          <Box
             title={title}
             icon={icon}
             description={description}

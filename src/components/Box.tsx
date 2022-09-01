@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { ReactSVG } from "react-svg";
 
-interface BlockProps {
+interface BoxProps {
   isFitured?: boolean;
   title: string;
   description: string;
@@ -12,13 +12,13 @@ interface BlockProps {
   };
 }
 
-export const Block = ({
+export const Box = ({
   title,
   description,
   icon,
   link,
   isFitured,
-}: BlockProps) => {
+}: BoxProps) => {
   return isFitured ? (
     <div className="flex flex-col lg:grid lg:grid-cols-[1fr,2fr] lg:flex-row gap-12 justify-between py-12 px-6 lg:px-8 xl:px-12 bg-group xl:bg-featured xl:hover:bg-featuredHover xl:bg-no-repeat xl:bg-[length:450px_auto,cover] xl:bg-[position:-100px_-10px,0,0] ease-out duration-700 relative z-10 mt-20 md:mt-14 lg:mt-0">
       <div className="flex items-center justify-center lg:items-start lg:justify-start h-7 lg:h-auto">

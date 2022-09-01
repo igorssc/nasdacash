@@ -2,7 +2,7 @@ import coldStakingImg from "../assets/cold-staking.png";
 import masternodesImg from "../assets/masternodes.png";
 import posImg from "../assets/pos.png";
 import { BannerMasternode } from "../components/BannerMasternode";
-import { Block } from "../components/Block";
+import { Box } from "../components/Box";
 import { CommonQuestions } from "../components/CommonQuestions";
 import { Container } from "../components/Container";
 import { EstimateMasternodeRewards } from "../components/EstimateMasternodeRewards";
@@ -62,7 +62,7 @@ export const Masternodes = () => {
         <Container>
           <Title title="Advanced" />
           <div className="grid sm:grid-cols-2 gap-6">
-            <Block
+            <Box
               title="Proof of Stake"
               description="Receive rewards while holding NSDC for supporting the network,
                   without the need for expensive mining hardware."
@@ -70,7 +70,7 @@ export const Masternodes = () => {
               link={{ href: "/proof-of-stake", text: "LEARN MORE" }}
               isFitured
             />
-            <Block
+            <Box
               title="Cold Staking"
               description="Delegate your NSDC for staking to a hot wallet, while maintaining full control and keeping your NSDC secured offline."
               icon={coldStakingImg}

@@ -1,4 +1,4 @@
-import { Block } from "./Block";
+import { Box } from "./Box";
 import { Container } from "./Container";
 import { Title } from "./Title";
 
@@ -11,7 +11,7 @@ export const MasternodeDocumentation = () => {
         resume="Looking for more details or instructions? No Problem. We got you covered."
       />
       <div className="w-1/2 mx-auto">
-        <Block
+        <Box
           title="Masternode"
           description="Masternode Setup Guide"
           link={{ href: "/masternode-guide", text: "LEARN MORE" }}
