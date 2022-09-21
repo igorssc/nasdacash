@@ -1,6 +1,6 @@
 import { ReactNode, useEffect } from "react";
 import "../utils/particles/particles.js";
-import { configParticles } from "../utils/particles/particlesjs.config.js";
+import { configParticles } from "../utils/particles/particlesjs.config";
 
 interface BackgroundParticlesProps {
   children: ReactNode;

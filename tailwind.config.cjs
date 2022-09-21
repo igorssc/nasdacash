@@ -16,15 +16,12 @@ module.exports = {
         },
         float: {
           "0%": {
-            "drop-shadow": "0 5px 15px 0 rgba(0,0,0,.6)",
             transform: "translatey(0)",
           },
           "50%": {
-            "drop-shadow": "0 25px 15px 0 rgba(0,0,0,.2)",
             transform: "translatey(-30px)",
           },
           "100%": {
-            "drop-shadow": "0 5px 15px 0 rgba(0,0,0,.6)",
             transform: "translatey(0)",
           },
         },
