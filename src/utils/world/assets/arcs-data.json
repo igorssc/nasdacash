@@ -1,14 +1,9 @@
 {
-  "type": "FlightsCollection",
   "flights": [
     {
-      "type": "flight",
       "order": 1,
       "from": "Belo Horizonte",
       "to": "Rio de Janeiro",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": -19.885592,
       "startLng": -43.951191,
       "endLat": -22.9068,
@@ -17,13 +12,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 1,
       "from": "New Delhi",
       "to": "Kuala Lumpur",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": 28.6139,
       "startLng": 77.209,
       "endLat": 3.139,
@@ -32,13 +23,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 1,
       "from": "Belo Horizonte",
       "to": "Nairóbi",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": -19.885592,
       "startLng": -43.951191,
       "endLat": -1.303396,
@@ -47,13 +34,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 2,
       "from": "Singapore",
       "to": "Tokyo",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": 1.3521,
       "startLng": 103.8198,
       "endLat": 35.6762,
@@ -62,13 +45,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 2,
       "from": "London",
       "to": "Kuala Lumpur",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": 51.5072,
       "startLng": -0.1276,
       "endLat": 3.139,
@@ -77,13 +56,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 2,
       "from": "Brasília",
       "to": "Las Vegas",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": -15.785493,
       "startLng": -47.909029,
       "endLat": 36.162809,
@@ -92,13 +67,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 3,
       "from": "Sydney",
       "to": "Hong Kong",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": -33.8688,
       "startLng": 151.2093,
       "endLat": 22.3193,
@@ -107,13 +78,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 3,
       "from": "Honolulu",
       "to": "New York City",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": 21.3099,
       "startLng": -157.8581,
       "endLat": 40.7128,
@@ -122,13 +89,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 3,
       "from": "Jakarta",
       "to": "London",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": -6.2088,
       "startLng": 106.8456,
       "endLat": 51.5072,
@@ -137,13 +100,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 4,
       "from": "Kano",
       "to": "Cuiaba",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": 11.986597,
       "startLng": 8.571831,
       "endLat": -15.595412,
@@ -152,13 +111,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 4,
       "from": "Buenos Aires",
       "to": "Hong Kong",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": -34.6037,
       "startLng": -58.3816,
       "endLat": 22.3193,
@@ -167,13 +122,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 4,
       "from": "London",
       "to": "Paris",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": 51.5072,
       "startLng": -0.1276,
       "endLat": 48.8566,
@@ -182,13 +133,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 5,
       "from": "Manila",
       "to": "London",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": 14.5995,
       "startLng": 120.9842,
       "endLat": 51.5072,
@@ -197,13 +144,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 5,
       "from": "Singapore",
       "to": "Sydney",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": 1.3521,
       "startLng": 103.8198,
       "endLat": -33.8688,
@@ -212,13 +155,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 5,
       "from": "Los Angeles",
       "to": "Paris",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": 34.0522,
       "startLng": -118.2437,
       "endLat": 48.8566,
@@ -227,13 +166,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 6,
       "from": "Lusaka",
       "to": "Amazônia",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": -15.432563,
       "startLng": 28.315853,
       "endLat": 1.094136,
@@ -242,13 +177,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 6,
       "from": "Seoul",
       "to": "Tokyo",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": 37.5665,
       "startLng": 126.978,
       "endLat": 35.6762,
@@ -257,13 +188,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 6,
       "from": "Hong Kong",
       "to": "London",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": 22.3193,
       "startLng": 114.1694,
       "endLat": 51.5072,
@@ -272,13 +199,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 7,
       "from": "Belo Horizonte",
       "to": "Cuiabá",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": -19.885592,
       "startLng": -43.951191,
       "endLat": -15.595412,
@@ -287,13 +210,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 7,
       "from": "Paris",
       "to": "Berlin",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": 48.8566,
       "startLng": -2.3522,
       "endLat": 52.52,
@@ -302,13 +221,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 7,
       "from": "Berlin",
       "to": "Los Angeles",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": 52.52,
       "startLng": 13.405,
       "endLat": 34.0522,
@@ -317,13 +232,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 8,
       "from": "Luanda",
       "to": "Cidade do Cabo",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": -8.833221,
       "startLng": 13.264837,
       "endLat": -33.936138,
@@ -332,13 +243,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 8,
       "from": "Vancouver",
       "to": "Amsterdam",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": 49.2827,
       "startLng": -123.1207,
       "endLat": 52.3676,
@@ -347,13 +254,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 8,
       "from": "Singapore",
       "to": "New York City",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": 1.3521,
       "startLng": 103.8198,
       "endLat": 40.7128,
@@ -362,13 +265,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 9,
       "from": "London",
       "to": "Los Angeles",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": 51.5072,
       "startLng": -0.1276,
       "endLat": 34.0522,
@@ -377,13 +276,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 9,
       "from": "Hong Kong",
       "to": "Rio de Janeiro",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": 22.3193,
       "startLng": 114.1694,
       "endLat": -22.9068,
@@ -392,13 +287,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 9,
       "from": "Singapore",
       "to": "Buenos Aires",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": 1.3521,
       "startLng": 103.8198,
       "endLat": -34.6037,
@@ -407,13 +298,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 10,
       "from": "Rio de Janeiro",
       "to": "New Delhi",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": -22.9068,
       "startLng": -43.1729,
       "endLat": 28.6139,
@@ -422,13 +309,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 10,
       "from": "Los Angeles",
       "to": "Shanghai",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": 34.0522,
       "startLng": -118.2437,
       "endLat": 31.2304,
@@ -437,13 +320,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 10,
       "from": "Jakarta",
       "to": "Amsterdam",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": -6.2088,
       "startLng": 106.8456,
       "endLat": 52.3676,
@@ -452,13 +331,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 11,
       "from": "Rome",
       "to": "Los Angeles",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": 41.9028,
       "startLng": 12.4964,
       "endLat": 34.0522,
@@ -467,13 +342,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 11,
       "from": "Jakarta",
       "to": "Shanghai",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": -6.2088,
       "startLng": 106.8456,
       "endLat": 31.2304,
@@ -482,13 +353,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 11,
       "from": "Hong Kong",
       "to": "Singapore",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": 22.3193,
       "startLng": 114.1694,
       "endLat": 1.3521,
@@ -497,13 +364,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 12,
       "from": "Los Angeles",
       "to": "San Francisco",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": 34.0522,
       "startLng": -118.2437,
       "endLat": 37.7749,
@@ -512,13 +375,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 12,
       "from": "Tokyo",
       "to": "Hong Kong",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": 35.6762,
       "startLng": 139.6503,
       "endLat": 22.3193,
@@ -527,13 +386,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 12,
       "from": "Hong Kong",
       "to": "Los Angeles",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": 22.3193,
       "startLng": 114.1694,
       "endLat": 34.0522,
@@ -542,13 +397,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 13,
       "from": "Berlin",
       "to": "Hong Kong",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": 52.52,
       "startLng": 13.405,
       "endLat": 22.3193,
@@ -557,13 +408,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 13,
       "from": "Kano",
       "to": "Tokyo",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": 11.986597,
       "startLng": 8.571831,
       "endLat": 35.6762,
@@ -572,13 +419,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 13,
       "from": "Rio de Janeiro",
       "to": "Buenos Aires",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": -22.9068,
       "startLng": -43.1729,
       "endLat": -34.6037,
@@ -587,13 +430,9 @@
       "color": "#FFFFFF"
     },
     {
-      "type": "flight",
       "order": 14,
       "from": "Cidade do Cabo",
       "to": "Meca",
-      "flightCode": "Globe",
-      "date": "20220101",
-      "status": true,
       "startLat": -33.936138,
       "startLng": 18.436529,
       "endLat": 21.395643,

@@ -1237,6 +1237,11 @@ quick-lru@^5.1.1:
   resolved "https://registry.npmjs.org/quick-lru/-/quick-lru-5.1.1.tgz"
   integrity sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==
 
+react-animation-particles@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/react-animation-particles/-/react-animation-particles-1.0.4.tgz#17755c489cdc16d62ae7475eccc156a90fef622d"
+  integrity sha512-eAFFLBDlfGelkdG0LDL51XUQPTGQ5qco7lNOeogtc0SUviG1XIsiwZabDEjexNZhfxL23XlynRUjtQOQajVV4w==
+
 react-countup@^6.3.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/react-countup/-/react-countup-6.3.0.tgz#9a345674d571f76c1046a0ded89fc86dbe52a2f0"

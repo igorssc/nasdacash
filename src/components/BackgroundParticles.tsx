@@ -1,7 +1,7 @@
-import { ReactNode, useEffect } from "react";
+import { ReactNode } from "react";
+import { Particles } from "react-animation-particles";
 import "../utils/particles/particles.js";
-import { configParticles } from "../utils/particles/particlesjs.config";
-
+import { configParticles } from "../utils/particlesjs.config";
 interface BackgroundParticlesProps {
   children: ReactNode;
   className?: string;
@@ -11,27 +11,13 @@ export const BackgroundParticles = ({
   children,
   className,
 }: BackgroundParticlesProps) => {
-  useEffect(() => {
-    setTimeout(() => {
-      // @ts-ignore:next-line
-      particlesJS.load("particles-js", configParticles, function () {});
-    }, 1000);
-  }, []);
-
   return (
     <>
-      <div className="hidden md:block">
-        <div
-          id="particles-js"
-          className={`w-full h-full"
+      <div
+        className={`w-full h-full"
         ${className ? className : ""}`}
-        >
-          <canvas
-            className={`particles-js-canvas-el w-full absolute`}
-            height={0}
-          ></canvas>
-          {children}
-        </div>
+      >
+        <Particles config={configParticles}>{children}</Particles>
       </div>
       <div className="block md:hidden">{children}</div>
     </>
