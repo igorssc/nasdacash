@@ -34,11 +34,11 @@ npm init
 - Start the server
 
 ```bash
-yarn dev
+yarn dev --port 3000
 
 # or
 
-npm run dev
+npm run dev -- --port 3000
 ```
 
 You can now access [`localhost:3000`](http://localhost:3000) from your browser.
