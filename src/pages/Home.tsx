@@ -14,7 +14,7 @@ export const Home = () => {
     {
       question: "What is Nasdacash?",
       answer:
-        "Released September 2020, Nasdacash is an open-source peer-to-peer cryptocurrency that follows the Decentralized Autonomous Organization Model. It aims to ensure privacy, transaction speed and anonymity. One of the main purposes is to provide an affordable and convenient means to make daily payments for various products and services. NSDC aims to be a practical alternative to bank cards and cash. It also provides a robust solution for international remittances, particularly in countries where financial freedom is limited. Virtual currency gives users freedom and control so they can send or receive money anywhere, to anyone. With it, there is no need to deal with bureaucracy, exchange rate complexities, delays and charges that increase the financial burden..",
+        "Released September 2020, Nasdacash is an open-source peer-to-peer cryptocurrency that follows the Decentralized Autonomous Organization Model. It aims to ensure privacy, transaction speed and anonymity. One of the main purposes is to provide an affordable and convenient means to make daily payments for various products and services. NSDC aims to be a practical alternative to bank cards and cash. It also provides a robust solution for international remittances, particularly in countries where financial freedom is limited. Virtual currency gives users freedom and control so they can send or receive money anywhere, to anyone. With it, there is no need to deal with bureaucracy, exchange rate complexities, delays and charges that increase the financial burden.",
     },
     {
       question: "What is mining?",
